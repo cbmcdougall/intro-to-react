@@ -102,6 +102,7 @@
 }
 
 .album.medium img {
+    width: 100%;
     animation: image-anim 0.3s ease-in;
 }
 
