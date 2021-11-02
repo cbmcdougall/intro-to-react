@@ -43,7 +43,7 @@ DOC
 tee -a src/index.js << DOC
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import {App} from './App';
 
 ReactDOM.render(
   <App />, 
@@ -76,7 +76,7 @@ module.exports = {
         resolve: {
           extensions: [".js", ".jsx"]
         },
-        exclude: /nodeModules/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
         }
