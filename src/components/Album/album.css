@@ -176,7 +176,6 @@
 /* --- Animation for image on transition from large -> medium/small */
 @keyframes image-anim {
     0% {
-        float: right;
         width: 50%;
     }
     100% {

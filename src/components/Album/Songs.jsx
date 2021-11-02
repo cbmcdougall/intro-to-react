@@ -3,7 +3,7 @@ import React from "react";
 export const Songs = ({songs}) => {
     const renderSongs = () => songs.map((s, i) => <li key={i}>{s}</li>)
     return (
-        <ol className="songlist">
+        <ol role="group" className="songlist">
             { renderSongs() }
         </ol>
     )
