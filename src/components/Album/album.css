@@ -169,16 +169,14 @@
     .album {
         margin: 10px;
     }
-    .album.large {
-        position: relative;
-        left: 0;
-        top: 0;
-    }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     :root {
         font-size: 14px;
+    }
+    .album.large img {
+        margin-top: 30%;
     }
 }
 
