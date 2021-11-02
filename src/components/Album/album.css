@@ -64,6 +64,7 @@
 
 .album.small img {
     border-radius: 50%;
+    animation: image-anim 0.3s ease-in;
 }
 
 .album.small .album-container {
@@ -86,6 +87,10 @@
 .album.medium {
     height: 350px;
     width: 250px;
+}
+
+.album.medium img {
+    animation: image-anim 0.3s ease-in;
 }
 
 /* --- Large Album Style --- */
@@ -165,5 +170,16 @@
     100% {
         opacity: 0.6;
         transform: scale(1);
+    }
+}
+
+/* --- Animation for image on transition from large -> medium/small */
+@keyframes image-anim {
+    0% {
+        float: right;
+        width: 50%;
+    }
+    100% {
+        width: 100%;
     }
 }
