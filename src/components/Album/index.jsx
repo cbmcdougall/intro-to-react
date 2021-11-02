@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './album.css';
 import placeholder from './placeholder.jpg';
 import { Songs } from './Songs';
+import './album.css';
 
 export const Album = ({ size, image, title, year, songs }) => {
     const [isLarge, setLarge] = useState(false);
-    const toggleLarge = () => setLarge(!isLarge)
+    const toggleLarge = () => setLarge((prevIsLarge) => !prevIsLarge)
     let heading=<h3>{title} ({year})</h3>;
     if (size==="small"){ heading = <><h3>{title}</h3><h4>({year})</h4></> }
 
