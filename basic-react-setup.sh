@@ -9,11 +9,6 @@ touch \
     config/webpack.config.js \
     config/dev.webpack.config.js \
     public/index.html \
-    src/components/Welcome.jsx \
-    src/components/Band.jsx \
-    src/components/Intro.jsx \
-    src/components/Albums.jsx \
-    src/components/Album.jsx 
 # Populate files
 tee -a .gitignore << DOC
 node_modules
@@ -54,14 +49,6 @@ ReactDOM.render(
   <App />, 
   document.getElementById('root')
 );
-DOC
-tee -a src/App.jsx << DOC
-import React from 'react';
-
-export const App = () => <h1>Hello World!</h1>;
-DOC
-tee -a src/components/Welcome.jsx src/components/Band.jsx src/components/Intro.jsx src/components/Albums.jsx src/components/Album.jsx << DOC
-import React from 'react';
 DOC
 tee -a config/dev.webpack.config.js << DOC
 const config = require('./webpack.config.js');
