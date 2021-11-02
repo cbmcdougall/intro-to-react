@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import placeholder from './placeholder.jpg';
 import { FaveButton } from '../FaveButton';
 import { Songs } from './Songs';
 import './album.css';
@@ -17,7 +16,7 @@ export const Album = ({ size, image, title, year, songs }) => {
     return (
         <div  role="menuitem" className={isLarge ? 'album large' : `album ${size}`}>
             <div className="image-container">
-                <img width="127.5px" src={image || placeholder} alt={`${title} album cover`}/>
+                <img width="127.5px" src={image} alt={`${title} album cover`}/>
             </div>
             <div className="album-container">
                 {heading}

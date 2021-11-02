@@ -1,5 +1,6 @@
 import React from "react";
 import { Album } from '.';
+import placeholder from './placeholder.jpg';
 
 const songs = [
     "Test song 1",
@@ -33,6 +34,8 @@ const Template = args => <Album {...args}/>;
 
 export const Default = Template.bind({});
 Default.args = {
+    size: 'medium',
+    image: placeholder,
     title: "Test Album",
     year: 2021,
     songs
@@ -40,6 +43,7 @@ Default.args = {
 export const Small = Template.bind({});
 Small.args = {
     size: 'small',
+    image: placeholder,
     title: "Test Album",
     year: 2021,
     songs
@@ -47,6 +51,7 @@ Small.args = {
 export const Medium = Template.bind({});
 Medium.args = {
     size: 'medium',
+    image: placeholder,
     title: "Test Album",
     year: 2021,
     songs
@@ -54,6 +59,7 @@ Medium.args = {
 export const Large = Template.bind({});
 Large.args = {
     size: 'large',
+    image: placeholder,
     title: "Test Album",
     year: 2021,
     songs
