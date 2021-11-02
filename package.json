@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --watch --setupFilesAfterEnv ./src/test/setupTests.js --env=jsdom",
     "dev": "webpack serve --mode development --config config/dev.webpack.config.js",
-    "build": "webpack --mode production",
+    "build": "webpack --config config/prod.webpack.config.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
