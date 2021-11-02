@@ -1,0 +1,169 @@
+:root {
+    font-size: 18px;
+}
+
+/* --- General Style --- */
+.album {
+    transition: 0.2s ease-in-out;
+    height: 400px;
+    width: 300px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: cadetblue;
+    font-size: 1rem;
+    opacity: 0.75;
+}
+
+.album:hover {
+    opacity: 1;
+}
+
+.album, .album img {
+    border-radius: 1.5rem;
+}
+
+.album .image-container {
+    transition: 0.3s linear;
+    margin: 5%;
+    margin-bottom: 0;
+}
+
+.album-container {
+    height: 100%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.album h3 {
+    margin: 0.8rem 1rem;
+}
+
+.album .songlist {
+    display: none;
+}
+
+/* --- Small Album Style --- */
+.album.small {
+    height: 250px;
+    width: 150px;
+    font-size: 0.9em;
+    border-radius: 2rem;
+}
+
+.album.small .image-container {
+    margin: 7.5%;
+    margin-bottom: 0;
+}
+
+.album.small img {
+    border-radius: 50%;
+}
+
+.album.small .album-container {
+    padding: 10px;
+}
+
+.album.small h3 {
+    margin: 0 auto;
+}
+
+.album h4 {
+    margin: 0 auto;
+}
+
+.album.small em {
+    display: none;
+}
+
+/* --- Medium Album Style --- */
+.album.medium {
+    height: 350px;
+    width: 250px;
+}
+
+/* --- Large Album Style --- */
+.album.large {
+    height: 350px;
+    width: 650px;
+    font-size: 1.2em;
+    flex-direction: row;
+    border-radius: 2rem;
+}
+
+.album.large .image-container {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+}
+
+.album.large img {
+    width: 80%;
+    margin: 10%;
+    border-radius: 0;
+}
+
+.album.large .album-container {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.album.large h3 {
+    margin: 1rem;
+}
+
+.album.large .songlist {
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    padding-top: 0;
+    margin-right: auto;
+    text-align: left;
+    animation: grow 0.3s ease-in;
+}
+
+/* --- Responsiveness --- */
+@media only screen and (max-width: 800px) {
+    :root {
+        font-size: 16px;
+    }
+    .album {
+        margin: 10px;
+    }
+    .album.large {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+/* --- Animation keyframes for songlist --- */
+@keyframes grow {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: block;
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+}
