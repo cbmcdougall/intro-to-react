@@ -7,6 +7,7 @@ export const FaveButton = () => {
 
     return(
         <span
+            className="favourite"
             onClick={handleClick}
             role="switch"
             style={{ color: faved ? 'gold' : 'black' }}

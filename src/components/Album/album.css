@@ -4,6 +4,7 @@
 
 /* --- General Style --- */
 .album {
+    position: relative;
     transition: 0.2s ease-in-out;
     height: 400px;
     width: 300px;
@@ -21,6 +22,10 @@
     opacity: 1;
 }
 
+.album .favourite:hover, .album .card-toggle:hover {
+    cursor: pointer;
+}
+
 .album, .album img {
     border-radius: 1.5rem;
 }
@@ -33,7 +38,7 @@
 
 .album-container {
     height: 100%;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,6 +52,17 @@
 
 .album .songlist {
     display: none;
+}
+
+.album .favourite {
+    position: absolute;
+    bottom: 1.6rem;
+    scale: 1.4;
+}
+
+.album .card-toggle {
+    margin: 10px;
+    opacity: 0.6;
 }
 
 /* --- Small Album Style --- */
@@ -79,10 +95,6 @@
     margin: 0 auto;
 }
 
-.album.small em {
-    display: none;
-}
-
 /* --- Medium Album Style --- */
 .album.medium {
     height: 350px;
@@ -111,6 +123,7 @@
 .album.large img {
     width: 80%;
     margin: 10%;
+    margin-top: 14%;
     border-radius: 0;
 }
 
@@ -133,6 +146,18 @@
     margin-right: auto;
     text-align: left;
     animation: grow 0.3s ease-in;
+}
+
+.album.large .favourite {
+    bottom: auto;
+    top: 1rem;
+}
+
+.album.large .card-toggle {
+    position: absolute;
+    top: 0.2rem;
+    left: 1.2rem;
+    scale: 1.5;
 }
 
 /* --- Responsiveness --- */
