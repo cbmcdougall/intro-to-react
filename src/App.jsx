@@ -3,7 +3,7 @@ import { Welcome } from './components/Welcome';
 import { Albums } from './components/Albums';
 import "./style.css"
 
-const App = () => {
+export const App = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
 
     window.addEventListener("resize", () => {
@@ -16,5 +16,3 @@ const App = () => {
         <Albums isMobile={isMobile}/>
     </>)
 }
-
-export default App;
