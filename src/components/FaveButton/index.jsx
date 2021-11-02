@@ -10,6 +10,7 @@ export const FaveButton = () => {
             className="favourite"
             onClick={handleClick}
             role="switch"
+            aria-checked={faved}
             style={{ color: faved ? 'gold' : 'black' }}
         >{ faved ? "★" : "☆" }</span>
     )

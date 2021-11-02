@@ -31,7 +31,7 @@ export const Albums = ({isMobile}) => {
     return(
         <section id="albums">
             <h1>Studio Albums</h1>
-            <div className="discography-container">
+            <div className="discography-container" role="menu">
                 { renderAlbums() }
             </div>
         </section>

@@ -24,7 +24,11 @@ export const Album = ({ size, image, title, year, songs }) => {
                 <Songs songs={songs}/>
             </div>
             <FaveButton />
-            <span className="card-toggle" role="button" onClick={toggleLarge}>{isLarge ? <>&times;</> : "View Album"}</span>
+            <span 
+                className="card-toggle" 
+                role="button" 
+                onClick={toggleLarge}
+            >{isLarge ? <>&times;</> : "View Album"}</span>
         </div>
     )
 }
