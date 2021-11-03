@@ -1,4 +1,3 @@
-# in netlify.toml
 [build]
     command = "npm run build" # how to trigger a build
     publish = "/build" # what folder to publish 

@@ -45,7 +45,7 @@ export const Album = ({ size, title, year }) => {
                 className="card-toggle" 
                 role="button" 
                 onClick={toggleLarge}
-            >{isLarge ? <>&times;</> : "View Album"}</span>
+            >{isLarge ? <>&times;</> : "View Songlist"}</span>
         </div>
     )
 }
