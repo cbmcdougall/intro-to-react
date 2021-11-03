@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Album Default 1`] = `
+<div
+  className="album medium"
+  role="menuitem"
+>
+  <div
+    className="image-container"
+  >
+    <img
+      alt="Test Album album cover"
+      width="127.5px"
+    />
+  </div>
+  <div
+    className="album-container"
+  >
+    <h3>
+      Test Album
+       (
+      2021
+      )
+    </h3>
+  </div>
+  <span
+    aria-checked={false}
+    className="favourite"
+    onClick={[Function]}
+    role="switch"
+    style={
+      Object {
+        "color": "black",
+      }
+    }
+  >
+    ☆
+  </span>
+  <span
+    className="card-toggle"
+    onClick={[Function]}
+    role="button"
+  >
+    View Songlist
+  </span>
+</div>
+`;
+
+exports[`Storyshots Album Medium 1`] = `
+<div
+  className="album medium"
+  role="menuitem"
+>
+  <div
+    className="image-container"
+  >
+    <img
+      alt="Test Album album cover"
+      width="127.5px"
+    />
+  </div>
+  <div
+    className="album-container"
+  >
+    <h3>
+      Test Album
+       (
+      2021
+      )
+    </h3>
+  </div>
+  <span
+    aria-checked={false}
+    className="favourite"
+    onClick={[Function]}
+    role="switch"
+    style={
+      Object {
+        "color": "black",
+      }
+    }
+  >
+    ☆
+  </span>
+  <span
+    className="card-toggle"
+    onClick={[Function]}
+    role="button"
+  >
+    View Songlist
+  </span>
+</div>
+`;
+
+exports[`Storyshots Album Small 1`] = `
+<div
+  className="album small"
+  role="menuitem"
+>
+  <div
+    className="image-container"
+  >
+    <img
+      alt="Test Album album cover"
+      width="127.5px"
+    />
+  </div>
+  <div
+    className="album-container"
+  >
+    <h3>
+      Test Album
+    </h3>
+    <h4>
+      (
+      2021
+      )
+    </h4>
+  </div>
+  <span
+    aria-checked={false}
+    className="favourite"
+    onClick={[Function]}
+    role="switch"
+    style={
+      Object {
+        "color": "black",
+      }
+    }
+  >
+    ☆
+  </span>
+  <span
+    className="card-toggle"
+    onClick={[Function]}
+    role="button"
+  >
+    View Songlist
+  </span>
+</div>
+`;
+
+exports[`Storyshots Album/FaveButton Default 1`] = `
+<span
+  aria-checked={false}
+  className="favourite"
+  onClick={[Function]}
+  role="switch"
+  style={
+    Object {
+      "color": "black",
+    }
+  }
+>
+  ☆
+</span>
+`;
