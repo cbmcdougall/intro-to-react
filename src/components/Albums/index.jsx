@@ -12,7 +12,7 @@ const albums = [
     {title: "Versus The World", year: 2002},
     {title: "The Crusher", year: 2001},
     {title: "The Avenger", year: 1999},
-    {title: "Once Sent From The Golden Hall", year: 1997}
+    {title: "Once Sent From The Golden Hall", year: 1998}
 ]
 
 export const Albums = ({isMobile}) => {
