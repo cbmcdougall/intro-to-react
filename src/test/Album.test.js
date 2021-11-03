@@ -1,17 +1,16 @@
 import { screen } from "@testing-library/dom";
 import userEvent from "@testing-library/user-event";
-import { Album } from "../components/Album";
+import { Album } from "../components";
 
 describe('Album', () => {
     let testAlbum;
     beforeEach(() => {
         testAlbum = {
             size: "medium",
-            title: "Test Album",
-            year: 2021,
-            songs: ["Test Song 1", "Test Song 2", "Test Song 3"]
+            title: "Berserker",
+            year: 2019,
         };
-        render(<Album size={testAlbum.size} title={testAlbum.title} year={testAlbum.year} songs={testAlbum.songs}/>);
+        render(<Album size={testAlbum.size} title={testAlbum.title} year={testAlbum.year}/>);
     })
 
     test('it renders a medium-sized album card', () => {
@@ -32,12 +31,13 @@ describe('Album', () => {
         const startingClass = album.className;
         expect(startingClass).toBe('album medium');
         // Simulate a user click
-        userEvent.click(album);
+        const button = screen.queryByRole("button");
+        userEvent.click(button);
         // Check it's now large
         const newClass = album.className;
         expect(newClass).toBe('album large');
         // Check it returns to original size when clicked again
-        userEvent.click(album);
+        userEvent.click(button);
         const nextClass = album.className;
         expect(nextClass).toBe(startingClass);
     })

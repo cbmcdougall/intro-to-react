@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaveButton } from '../FaveButton';
-import { Songs } from './Songs';
+import { FaveButton, Songs } from '..';
 import axios from 'axios';
 import './album.css';
 
@@ -14,7 +13,8 @@ export const Album = ({ size, title, year }) => {
             const imageUrl = data.album.image[3]["#text"];
             setImage(imageUrl);
             const tracks = data.album.tracks.track.map(t => t.name)
-            setSongs(tracks);
+            // The album "Versus the World" has 2 discs (second is bonus), just want the songs from disc 1
+            title==="Versus The World" ? setSongs(tracks.slice(0,9)) : setSongs(tracks);
         }
         getAlbumInfo();
     }, [])
