@@ -6,12 +6,8 @@ export const Header = () => {
         <header className="header">
             <h1>Amon Amarth - <em>Melodic Death Metal</em></h1>
             <nav>
-                <button>
-                    <NavLink exact to='/'>Home</NavLink>
-                </button>
-                <button>
-                    <NavLink to='/StudioAlbums'>Studio Albums</NavLink>
-                </button>
+                <NavLink exact to='/'><button>Home</button></NavLink>
+                <NavLink to='/StudioAlbums'><button>Studio Albums</button></NavLink>
                 {/* Back Button */}
             </nav>
         </header>
