@@ -49,10 +49,6 @@
     margin: 0.8rem 1rem;
 }
 
-.album .songlist {
-    display: none;
-}
-
 .album .favourite {
     position: absolute;
     bottom: 1.6rem;
@@ -139,7 +135,6 @@
 }
 
 .album.large .songlist {
-    display: block;
     font-size: 1rem;
     padding: 10px;
     padding-top: 0;

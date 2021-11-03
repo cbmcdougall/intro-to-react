@@ -56,11 +56,11 @@ Medium.args = {
     year: 2021,
     songs
 }
-export const Large = Template.bind({});
-Large.args = {
-    size: 'large',
-    image: placeholder,
-    title: "Test Album",
-    year: 2021,
-    songs
-}
+// export const Large = Template.bind({});
+// Large.args = {
+//     size: 'large',
+//     image: placeholder,
+//     title: "Test Album",
+//     year: 2021,
+//     songs
+// }
