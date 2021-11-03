@@ -21,3 +21,13 @@
 ## Add user control form
 
 - Perhaps let user search/select a song and get lyrics for the song
+
+## Fix Album story
+
+- Album component was restructured to get image and songs from api, reflect this in the stories setup
+
+## Add component stories
+
+- [] Songs
+- [] Header
+- [] Footer
