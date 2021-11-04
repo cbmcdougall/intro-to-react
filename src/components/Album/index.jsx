@@ -39,7 +39,7 @@ export const Album = ({ size, title, year }) => {
     return (
         <div  role="menuitem" className={isLarge ? 'album large' : `album ${size}`}>
             <div className="image-container">
-                <img width="127.5px" src={image} alt={`${title} album cover`}/>
+                <img width="300px" height="300px" src={image} alt={`${title} album cover`}/>
             </div>
             <div className="album-container">
                 {/* Separate album and year on the small card to allow for better styling */}

@@ -23,14 +23,14 @@
     cursor: pointer;
 }
 
-.album, .album img {
-    border-radius: 1.5rem;
+.album .image-container {
+    width: 100%;
+    display: flex;
+    transition: 0.3s linear;
 }
 
-.album .image-container {
-    transition: 0.3s linear;
-    margin: 5%;
-    margin-bottom: 0;
+.album, .album img {
+    border-radius: 1.5rem;
 }
 
 .album-container {
@@ -61,16 +61,15 @@
 .album.small {
     height: 250px;
     width: 150px;
-    font-size: 0.9em;
+    font-size: 0.8rem;
     border-radius: 2rem;
 }
 
-.album.small .image-container {
-    margin: 7.5%;
-    margin-bottom: 0;
-}
-
 .album.small img {
+    width: 100%;
+    height: auto;
+    margin: 7%;
+    margin-bottom: 0;
     border-radius: 50%;
     animation: image-anim 0.3s ease-in;
 }
@@ -95,6 +94,9 @@
 
 .album.medium img {
     width: 100%;
+    height: auto;
+    margin: 5%;
+    margin-bottom: 0;
     animation: image-anim 0.3s ease-in;
 }
 
@@ -114,7 +116,8 @@
 }
 
 .album.large img {
-    width: 80%;
+    width: 100%;
+    height: auto;
     margin: 10%;
     margin-top: 14%;
     border-radius: 0;
@@ -166,9 +169,12 @@
     :root {
         font-size: 14px;
     }
-    .album.large img {
+    /* .album.large .image-container {
+        height: 70%;
+    } */
+    /* .album.large img {
         margin-top: 30%;
-    }
+    } */
 }
 
 /* --- Animation keyframes for songlist --- */

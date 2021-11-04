@@ -1,5 +1,10 @@
 # To-do list
 
+## Fix album image sizes
+
+- [x] define set width/height
+- [] adjust css styling to display desired sizes
+
 ## Cache API response in getAlbumInfo
 
 ### Make use of useContext hook
