@@ -1,5 +1,6 @@
 import React from 'react';
 import { Album } from '..';
+import './albums.css';
 
 const albums = [
     {title: "Berserker", year: 2019},
@@ -20,8 +21,11 @@ export const Albums = ({isMobile}) => {
     const renderAlbums = () => albums.map((a, i) => <Album key={i} size={size} title={a.title} year={a.year}/>);
 
     return(
-        <section id="albums">
-            <h1>Studio Albums</h1>
+        <section id="studioAlbums">
+            <div className="heading">
+                <h1 id="albumsHeading">Studio Albums</h1>
+            </div>
+                <hr></hr>
             <div className="discography-container" role="menu">
                 { renderAlbums() }
             </div>

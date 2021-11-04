@@ -1,0 +1,28 @@
+.heading {
+    height: 80px;
+    text-align: center;
+    background-color: cadetblue;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#albumsHeading {
+    height: 100%;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+hr {
+    margin-top: 0;
+    border: 2px solid var(--dark-bg);
+}
+
+.discography-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
