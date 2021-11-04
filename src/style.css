@@ -1,7 +1,8 @@
 :root {
     --dark-bg: #000203;
     --bluesmoke: #213a49;
-    --bluetext: #96d9db
+    --bluetext: #96d9db;
+    font-size: 18px;
 }
 
 body {
@@ -10,4 +11,5 @@ body {
 
 #root {
     background-color: var(--bluesmoke);
+    color: var(--bluetext);
 }
