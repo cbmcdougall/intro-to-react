@@ -2,13 +2,6 @@
 
 ## Cache API response in getAlbumInfo
 
-- [] Implement redux to have a store of album data
-- [] Make action creater for fetching data and dispatching to store
-- [] fetch data on initial render of App
-- [] Albums component retrieves album data from store to pass to Album component
-- [] Reconfigure Album component back to general "retrieve album data and render"
-  - Similar to how story is set up, just with imageUrl
-
 ## Fix Album story
 
 - Album component was restructured to get image and songs from api, reflect this in the stories setup
