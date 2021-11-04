@@ -1,0 +1,43 @@
+.header {
+    height: 100px;
+    background-color: var(--dark-bg);
+    color: white;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar {
+    height: 100%;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navlink {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbutton {
+    color: var(--bluetext);
+    background-color: var(--bluesmoke);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 0.8rem;
+    opacity: 0.7;
+}
+
+.navbutton:hover {
+    cursor: pointer;
+    opacity: 1.0;
+}
+
+.active button{
+    opacity: 1.0;
+    font-weight: bolder;
+}
