@@ -9,6 +9,16 @@
 - [x] If not in cache, retrieve from api and store in cache
 - Use [this](https://www.smashingmagazine.com/2020/07/custom-react-hook-fetch-cache-data/) example guide
 
+### Make use of useContext hook
+
+- [] API call once at initial render of page
+- [] Cache the data of the call
+- [] useContext to get the data when rendering album + songs
+
+## Remake isMobile window resize into separate custom hook
+
+- Currently it's a useEffect in StudioAlbums
+
 ## CSS styling
 
 - [x] Nav buttons
@@ -31,6 +41,12 @@
 - [] Footer
 
 ## Add testing
+
+- [] Albums
+- [] Band
+- [] Songs
+- [] Footer
+- [] Header
 
 ## Add user control form (stretch goal)
 
