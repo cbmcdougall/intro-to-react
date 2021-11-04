@@ -20,10 +20,6 @@
 
 - [x] Image of the band
 
-## Add user control form
-
-- Perhaps let user search/select a song and get lyrics for the song
-
 ## Fix Album story
 
 - Album component was restructured to get image and songs from api, reflect this in the stories setup
@@ -33,3 +29,9 @@
 - [] Songs
 - [] Header
 - [] Footer
+
+## Add testing
+
+## Add user control form (stretch goal)
+
+- Perhaps let user search/select a song and get lyrics for the song
