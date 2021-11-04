@@ -1,0 +1,22 @@
+#bandinfo {
+    display: flex;
+    height: 400px;
+    margin: 1rem;
+}
+
+#bandpic-container {
+    height: 100%;
+}
+
+#bandtext-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.band-text {
+    margin: 1rem;
+    color: var(--bluetext);
+}
