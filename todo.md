@@ -2,21 +2,23 @@
 
 ## Cache API response in getAlbumInfo
 
-- [] Setup cache storage
-- [] Retrieve from cache if it's there
-- [] If not in cache, retrieve from api and store in cache
+### (Followed guide, isn't working so scrapping)
+
+- [x] Setup cache storage
+- [x] Retrieve from cache if it's there
+- [x] If not in cache, retrieve from api and store in cache
 - Use [this](https://www.smashingmagazine.com/2020/07/custom-react-hook-fetch-cache-data/) example guide
 
 ## CSS styling
 
-- [] Nav buttons
-- [] Header
-- [] Footer
-- [] Homepage content
+- [x] Nav buttons
+- [x] Header
+- [x] Footer
+- [x] Homepage content
 
 ## Add more homepage content
 
-- [] Image of the band
+- [x] Image of the band
 
 ## Add user control form
 
