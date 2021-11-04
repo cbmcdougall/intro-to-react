@@ -9,8 +9,9 @@ export const Album = ({ size, title, year }) => {
     const [ isLarge, setLarge ] = useState(false);
     
     useEffect(() => {
-        // Get album image, songs
         let cancelRequest = false;
+        if (!title) return;
+        // Get album image, songs
         const getAlbumInfo = async () => {
             try {
                 const { data } = await axios.get(`https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=fa6c736ed5fc986ba1d168fd665b2a3f&artist=Amon%20Amarth&album=${title}&format=json`);
@@ -18,7 +19,7 @@ export const Album = ({ size, title, year }) => {
                 const tracks = data.album.tracks.track.map(t => t.name)
                 
                 if (cancelRequest) return;
-                
+
                 setImage(imageUrl);
                 // The album "Versus the World" has 2 discs (second is bonus), just want the songs from disc 1
                 title==="Versus The World" ? setSongs(tracks.slice(0,9)) : setSongs(tracks);
@@ -26,14 +27,12 @@ export const Album = ({ size, title, year }) => {
                 return null
             }
         }
-        
         getAlbumInfo();
-        
         // Prevent setting the data if component has been unmounted
         return function cleanup() {
             cancelRequest = true;
         }
-    }, [])
+    }, [title])
 
     const toggleLarge = () => setLarge((prevIsLarge) => !prevIsLarge);
 
