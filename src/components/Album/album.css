@@ -65,6 +65,10 @@
     border-radius: 2em;
 }
 
+.album.small .image-container {
+    max-width: 150px;
+}
+
 .album.small img {
     width: 100%;
     height: auto;
@@ -92,6 +96,10 @@
     width: 250px;
 }
 
+.album.medium .image-container {
+    max-width: 250px;
+}
+
 .album.medium img {
     width: 100%;
     height: auto;
@@ -112,6 +120,7 @@
 .album.large .image-container {
     width: 50%;
     height: 100%;
+    max-width: 325px;
     margin: 0;
 }
 
