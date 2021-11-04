@@ -1,0 +1,30 @@
+.footer {
+    height: 50px;
+    background-color: var(--dark-bg);
+    color: white;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#bandsite {
+    height: 40px;
+    width: 200px;
+    color: var(--bluetext);
+    background-color: var(--bluesmoke);
+    border: none;
+    border-radius: 1rem;
+    font-weight: bolder;
+}
+
+#bandsite:hover {
+    cursor: pointer;
+}
