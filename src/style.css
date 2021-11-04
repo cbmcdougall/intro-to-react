@@ -1,11 +1,13 @@
-.header, .footer {
-    position: sticky;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+:root {
+    --dark-bg: #000203;
+    --bluesmoke: #213a49;
+    --bluetext: #96d9db
 }
 
-.discography-container {
-    display: flex;
-    flex-wrap: wrap;
+body {
+    margin: 0;
+}
+
+#root {
+    background-color: var(--bluesmoke);
 }
