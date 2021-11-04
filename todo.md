@@ -1,48 +1,13 @@
 # To-do list
 
-## Fix album image sizes
-
-- [x] define set width/height
-- [] adjust css styling to display desired sizes
-
 ## Cache API response in getAlbumInfo
 
-### Make use of useContext hook
-
-- [] API call once at initial render of page
-- [] Cache the data of the call
-- [] useContext to get the data when rendering album + songs
-
-#### In App.jsx
-
-- [] import useFetch custom hook, AlbumData context
-- [] set albumData state to result of useFetch calls
-- [] wrap `<Switch>` in `<AlbumData.Provider value={albumData}>`
-
-#### In Albums
-
-- [] import AlbumData context
-- [] useContext to get album info for renderAlbums
-
-#### In Album
-
-- [] receive album info in props
-  - might fix story?
-
-#### albumData format
-
-```json
-    albumData = {
-        "album title": {
-            year: 2021,
-            imageUrl: "image Url from api result",
-            songs: ["array of songs from api result"]
-        },
-        ...
-    }
-```
-
-----
+- [] Implement redux to have a store of album data
+- [] Make action creater for fetching data and dispatching to store
+- [] fetch data on initial render of App
+- [] Albums component retrieves album data from store to pass to Album component
+- [] Reconfigure Album component back to general "retrieve album data and render"
+  - Similar to how story is set up, just with imageUrl
 
 ## Fix Album story
 
@@ -65,6 +30,11 @@
 ## Done
 
 ----
+
+## Fix album image sizes
+
+- [x] define set width/height
+- [x] adjust css styling to display desired sizes
 
 ### (Followed guide, isn't working so scrapping)
 
