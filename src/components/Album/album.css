@@ -1,9 +1,6 @@
-:root {
-    font-size: 18px;
-}
-
 /* --- General Style --- */
 .album {
+    color: black;
     position: relative;
     transition: 0.2s ease-in-out;
     height: 400px;

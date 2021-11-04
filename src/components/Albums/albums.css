@@ -9,6 +9,7 @@
 }
 
 #albumsHeading {
+    color: black;
     height: 100%;
     font-size: 1.8rem;
     display: flex;
