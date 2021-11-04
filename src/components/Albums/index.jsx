@@ -1,9 +1,11 @@
 import React from 'react';
 import { Album } from '..';
+import { useWindowSize } from '../../customHooks';
 import './albums.css';
 
 
-export const Albums = ({isMobile}) => {
+export const Albums = () => {
+    const isMobile = useWindowSize();
     const albums = [
         {title: "Berserker", year: 2019},
         {title: "Jomsviking", year: 2016},
