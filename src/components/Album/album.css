@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: space-around;
     background-color: cadetblue;
-    font-size: 1rem;
+    font-size: 1em;
     opacity: 0.75;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .album, .album img {
-    border-radius: 1.5rem;
+    border-radius: 1.5em;
 }
 
 .album-container {
@@ -43,12 +43,12 @@
 }
 
 .album h3 {
-    margin: 0.8rem 1rem;
+    margin: 0.8em 1em;
 }
 
 .album .favourite {
     position: absolute;
-    bottom: 1.6rem;
+    bottom: 1.6em;
     scale: 1.4;
 }
 
@@ -61,8 +61,8 @@
 .album.small {
     height: 250px;
     width: 150px;
-    font-size: 0.8rem;
-    border-radius: 2rem;
+    font-size: 0.8em;
+    border-radius: 2em;
 }
 
 .album.small img {
@@ -106,7 +106,7 @@
     width: 650px;
     font-size: 1.2em;
     flex-direction: row;
-    border-radius: 2rem;
+    border-radius: 2em;
 }
 
 .album.large .image-container {
@@ -119,8 +119,7 @@
     width: 100%;
     height: auto;
     margin: 10%;
-    margin-top: 14%;
-    border-radius: 0;
+    animation: image-anim 0.3s ease-in;
 }
 
 .album.large .album-container {
@@ -131,50 +130,58 @@
 }
 
 .album.large h3 {
-    margin: 1rem;
+    margin: 0;
+    margin-top: 1em;
 }
 
 .album.large .songlist {
-    font-size: 1rem;
-    padding: 10px;
-    padding-top: 0;
-    margin-right: auto;
+    max-width: 100%;
+    font-size: 18px;
     text-align: left;
+    margin-right: auto;
     animation: grow 0.3s ease-in;
 }
 
 .album.large .favourite {
     bottom: auto;
-    top: 1rem;
+    top: 1em;
 }
 
 .album.large .card-toggle {
     position: absolute;
-    top: 0.2rem;
-    left: 1.2rem;
+    top: 0.2em;
+    left: 1.2em;
     scale: 1.5;
 }
 
 /* --- Responsiveness --- */
 @media only screen and (max-width: 800px) {
-    :root {
+    #root {
         font-size: 16px;
     }
     .album {
         margin: 10px;
     }
+    .album.large .songlist {
+        font-size: 16px;
+    }
+    .album.large img {
+        max-width: 100%;
+        height: auto;
+        margin: auto 10%;
+    }
 }
 
-@media only screen and (max-width: 450px) {
-    :root {
+@media only screen and (max-width: 500px) {
+    #root {
         font-size: 14px;
     }
-    /* .album.large .image-container {
-        height: 70%;
-    } */
-    /* .album.large img {
-        margin-top: 30%;
-    } */
+    .album.large .songlist {
+        overflow-y: scroll;
+    }
+    .album.large {
+        height: 250px;
+    }
 }
 
 /* --- Animation keyframes for songlist --- */
@@ -197,9 +204,11 @@
 /* --- Animation for image on transition from large -> medium/small */
 @keyframes image-anim {
     0% {
-        width: 50%;
+        width: 70%;
+        height: 70%;
     }
     100% {
         width: 100%;
+        height: 100%;
     }
 }

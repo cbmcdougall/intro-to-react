@@ -10,7 +10,7 @@
 
 #navbar {
     height: 100%;
-    margin-right: 1rem;
+    margin-right: 1em;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -27,8 +27,8 @@
     color: var(--bluetext);
     background-color: var(--bluesmoke);
     border: none;
-    border-radius: 1rem;
-    padding: 0.5rem 0.8rem;
+    border-radius: 1em;
+    padding: 0.5em 0.8em;
     opacity: 0.7;
 }
 
@@ -40,4 +40,10 @@
 .active button{
     opacity: 1.0;
     font-weight: bolder;
+}
+
+@media only screen and (max-width: 500px) {
+    .header {
+        font-size: 12px;
+    }
 }
