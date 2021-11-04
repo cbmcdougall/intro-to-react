@@ -83,6 +83,15 @@
 
 - [x] Image of the band
 
-## Add user control form (stretch goal)
+## Stretch goals / potential features
+
+----
+
+### Show only favourited albums
+
+- Can maybe use redux store to store favourited albums
+- Button on page navigates to page that renders albums from the store
+
+### Add user control form (stretch goal)
 
 - Perhaps let user search/select a song and get lyrics for the song
