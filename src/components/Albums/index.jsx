@@ -20,7 +20,7 @@ export const Albums = () => {
         {title: "Once Sent From The Golden Hall", year: 1998}
     ]
     const size = isMobile ? "small" : "medium";
-    const renderAlbums = () => albums.map((a, i) => <Album key={i} size={size} title={a.title} year={a.year}/>);
+    const renderAlbums = () => albums.map((a, i) => <Album key={i+1} size={size} title={a.title} year={a.year}/>);
 
     return(
         <section id="studioAlbums">
