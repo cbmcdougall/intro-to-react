@@ -4,6 +4,9 @@
 
 ## Fix Album story
 
+- [] Remake Album compononent into general "take in album info and render it"
+- [] Move api fetch to Albums component for now
+
 - Album component was restructured to get image and songs from api, reflect this in the stories setup
 
 ## Add component stories
