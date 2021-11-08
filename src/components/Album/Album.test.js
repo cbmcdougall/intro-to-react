@@ -1,6 +1,6 @@
 import { screen } from "@testing-library/dom";
 import userEvent from "@testing-library/user-event";
-import { Album } from "../components";
+import { Album } from ".";
 
 describe('Album', () => {
     let testAlbum;
