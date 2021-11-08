@@ -25,8 +25,6 @@
 
 ## Done
 
-----
-
 ## Fix album image sizes
 
 - [x] define set width/height
@@ -55,8 +53,6 @@
 - [x] Image of the band
 
 ## Stretch goals / potential features
-
-----
 
 ### Show only favourited albums
 
