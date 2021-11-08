@@ -31,7 +31,6 @@ The website is deployed [here](https://calum-music-react-app.netlify.app/) on ne
 - `npm run build-storybook` builds the storybook.
   - Outputs to `/storybook-static`.
 
-
 ## Planned features / to-do
 
 See the [to-do](todo.md) for a detailed list of what i'd like to update/implement if I find time.
