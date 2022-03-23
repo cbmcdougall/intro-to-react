@@ -1,21 +1,23 @@
 # To-do list
 
-## Cache API response in getAlbumInfo
+## In Progress / Planned
 
-## Fix Album story
+### Cache API response in getAlbumInfo
+
+### Fix Album story
 
 - [] Remake Album compononent into general "take in album info and render it"
 - [] Move api fetch to Albums component for now
 
 - Album component was restructured to get image and songs from api, reflect this in the stories setup
 
-## Add component stories
+### Add component stories
 
 - [] Songs
 - [] Header
 - [] Footer
 
-## Add testing
+### Add testing
 
 - [] Albums
 - [] Band
@@ -25,38 +27,27 @@
 
 ## Done
 
-----
-
-## Fix album image sizes
+### Fix album image sizes
 
 - [x] define set width/height
-- [x] adjust css styling to display desired sizes
+- [x] adjust css styling to display desired size
 
-### (Followed guide, isn't working so scrapping)
-
-- [x] Setup cache storage
-- [x] Retrieve from cache if it's there
-- [x] If not in cache, retrieve from api and store in cache
-- Use [this](https://www.smashingmagazine.com/2020/07/custom-react-hook-fetch-cache-data/) example guide
-
-## Remake isMobile window resize into separate custom hook
+### Remake isMobile window resize into separate custom hook
 
 - [x] Done
 
-## CSS styling
+### CSS styling
 
 - [x] Nav buttons
 - [x] Header
 - [x] Footer
 - [x] Homepage content
 
-## Add more homepage content
+### Add more homepage content
 
 - [x] Image of the band
 
 ## Stretch goals / potential features
-
-----
 
 ### Show only favourited albums
 
