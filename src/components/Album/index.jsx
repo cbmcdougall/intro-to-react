@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaveButton, Songs } from '..';
 import axios from 'axios';
-// import './album.css';
+import './album.css';
 
 export const Album = ({ size, title, year }) => {
     const [image, setImage] = useState();
